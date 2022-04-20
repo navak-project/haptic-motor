@@ -40,7 +40,7 @@ void receiveEvent(int howMany)
 {
   if (2 <= Wire.available())
   {
-    motorDur   = Wire.read() * 2;
+    motorDur   = Wire.read() * 10;
     motorSpeed = Wire.read();
 
     Serial.print(motorDur);
